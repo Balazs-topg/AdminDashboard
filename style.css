@@ -1,0 +1,166 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 150px 1fr;
+}
+
+
+nav{
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-weight: 900;
+
+    background-color: lightskyblue;
+
+    padding: 40px;
+
+    grid-column: 1/1;
+    grid-row: 1/-1;
+    grid-template-rows: minmax(50px, 1fr) 1fr 1fr;
+
+    display: grid;
+    grid-row: repeat(6, 50px);
+}
+nav .nav-buttons{
+    display: grid;
+    grid-auto-rows: 40px;
+}
+
+nav .logo{
+    font-size: 1.5rem;
+}
+nav .settings{
+    margin-top: 50px;
+}
+
+
+.header {
+    position: relative;
+    
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    grid-template-columns: 1fr;
+
+    padding: 20px;
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.209);
+}
+
+.header .top{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .top .pfp {
+    background-color: antiquewhite;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.header .search-bar{
+    width: 10px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: lightsteelblue;
+    flex-grow: 1;
+}
+.header .bottom {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .bottom .new{
+    margin-left: auto;
+}
+
+.header .bottom .pfp {
+    height: 60px;
+    width: 60px;
+    background-color: aqua;
+    border-radius: 100px;
+}
+
+.header .bottom .setting{
+    background-color: blue;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 100px;
+    color: white;
+}
+
+.information{
+    padding: 30px;
+    background-color: lightgrey;
+    display: flex;
+    gap: 20px;
+}
+
+.your-projects{
+    flex-grow: 1;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+
+    gap: 30px;
+}
+
+.card-container > *{
+    height: 200px;
+    background-color: white;
+    border-left: 10px orange solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.256);
+}
+
+.annoucements-trending-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 180px;
+}
+
+.annoucements-trending-bar > *{
+    height: 250px;
+}
+.announcements-container{
+    background-color: white;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.256);
+}
+
+.trending-container{
+    background-color: white;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.256);
+}
